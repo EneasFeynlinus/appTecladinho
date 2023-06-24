@@ -34,8 +34,8 @@ body {
 }
 
 .controls h1 {
-  font-size: 1.4rem;
   font-weight: 500;
+  font-size: 1.4rem;
 }
 
 .switcher {
@@ -103,11 +103,23 @@ body {
   height: 150px;
   border-radius: 0 0 5px 5px;
   border-bottom: 8px solid #222;
-  margin-left: 20px;
+  margin-left: -20px;
   z-index: 2;
   color: rgba(255, 255, 255, 0.3);
 }
 
+.piano_keys .white:nth-child(1) {
+  margin-right: 0px;
+}
+
 .piano_keys .white:nth-child(5) {
+  margin-right: 20px;
+}
+
+.piano_keys .white:nth-child(12) {
+  margin-right: 20px;
+}
+
+.piano_keys .white:nth-child(17) {
   margin-right: 20px;
 }

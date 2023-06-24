@@ -43,9 +43,35 @@ checkBox.addEventListener('change', ({ target }) => {
 })
 
 const keyDownMapper = {
+  Tab: () => handleMouseDown(keys[0]),
+  1: () => handleMouseDown(keys[1]),
   q: () => handleMouseDown(keys[2]),
+  2: () => handleMouseDown(keys[3]),
+  w: () => handleMouseDown(keys[4]),
+  e: () => handleMouseDown(keys[5]),
+  4: () => handleMouseDown(keys[6]),
+  r: () => handleMouseDown(keys[7]),
+  5: () => handleMouseDown(keys[8]),
+  t: () => handleMouseDown(keys[9]),
+  6: () => handleMouseDown(keys[10]),
+  y: () => handleMouseDown(keys[11]),
+  u: () => handleMouseDown(keys[12]),
+  8: () => handleMouseDown(keys[13]),
+  i: () => handleMouseDown(keys[14]),
+  9: () => handleMouseDown(keys[15]),
+  o: () => handleMouseDown(keys[16]),
+  p: () => handleMouseDown(keys[17]),
+  '-': () => handleMouseDown(keys[18]),
+  '[': () => handleMouseDown(keys[19]),
+  '=': () => handleMouseDown(keys[20]),
+  ']': () => handleMouseDown(keys[21]),
+  Backspace: () => handleMouseDown(keys[22]),
+  ç: () => handleMouseDown(keys[23]),
 }
 
 document.addEventListener('keydown', (event) => {
+  if (event.key !== 'F12') {
+    event.preventDefault()
+  }
   keyDownMapper[event.key]()
 })
